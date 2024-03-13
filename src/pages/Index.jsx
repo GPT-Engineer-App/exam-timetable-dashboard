@@ -52,7 +52,7 @@ const Index = () => {
             </Tr>
           </Thead>
           <Tbody>
-            {/* Placeholder rows for the exam timetable */}
+            {}
             <Tr>
               <Td>2023-04-10</Td>
               <Td>10:00 AM</Td>
@@ -69,6 +69,11 @@ const Index = () => {
           </Tbody>
         </Table>
       </Box>
+      <Flex justifyContent="center" p={4}>
+        <Button onClick={() => window.print()} colorScheme="blue">
+          Print Time Table
+        </Button>
+      </Flex>
 
       {selectedClass && selectedSection && selectedExamType && (
         <Text mt={4}>
